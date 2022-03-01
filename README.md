@@ -16,6 +16,7 @@ volts. As a whole, the performance is better than rest od the Full Adder cell.
 
 # Proposed sum generation circuit
 Table 2 presents input‐output logic along with the full swing transistor paths for Sum signal generation. The operation of the Sum generation circuit can be explained as follows:
+
 Case 1 (Cin ¼ 0 and AB ¼ 00= 11): The XNOR signal is 1 which turns ON n7. Source/ drain side input of n7 isCin ¼ 0; which is passed towards the output Sum node as a strong logic 0.
 
 Case 2 (Cin ¼ 0 and AB ¼ 01= 10): Cin ¼ 0 turns ON p6. Source/ drain side input of p6 is XOR = 1, which is passed towards the output Sum node as strong logic 1.
@@ -26,10 +27,9 @@ Case 4 (Cin ¼ 1 and AB ¼ 01= 10): Cin ¼ 1 turns ON n6.Source/ drain side inpu
 
 
 # Carry generation circuit
-The carry generation circuit used in the proposed FA cell is
-similar to the carry circuit. The operation of the carry
-generation circuit used in the proposed FA cell is described as
-follows:
+The carry generation circuit used in the proposed FA cell is similar to the carry circuit. The operation of the carry generation circuit used in the proposed FA cell is described as follows:
+
+
 Case 1 (Cin ¼ 0=1 and AB ¼ 00): XNOR = 1 turns ON n8.
 The diffusion side input of n8 is B ¼ 0. This B ¼ 0 is passed towards the output Cout node as strong logic 0.
 
