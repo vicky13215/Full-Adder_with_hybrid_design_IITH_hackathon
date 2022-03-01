@@ -6,4 +6,4 @@ This proposed adder is supposed to achieve improvement in
 Propagation delay, improvement in average power and also 
 improvement in power delay product in comparison to 
 conventional CMOS mirror Full-Adder while operating at 0.8 
-volts. As a whole, the performance is better than rest od the addercell.
+volts. As a whole, the performance is better than rest od the Full Adder cell.
