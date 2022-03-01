@@ -16,10 +16,12 @@ volts. As a whole, the performance is better than rest od the Full Adder cell.
 
 # Proposed sum generation circuit
 Table 2 presents input‐output logic along with the full swing transistor paths for Sum signal generation. The operation of the Sum generation circuit can be explained as follows:
-Case 1 (Cin ¼ 0 and AB ¼ 00= 11): The XNOR signal is 1 which turns ON n7. Source/ drain side input of n7 is
-Cin ¼ 0; which is passed towards the output Sum node as a strong logic 0.
+Case 1 (Cin ¼ 0 and AB ¼ 00= 11): The XNOR signal is 1 which turns ON n7. Source/ drain side input of n7 isCin ¼ 0; which is passed towards the output Sum node as a strong logic 0.
+
 Case 2 (Cin ¼ 0 and AB ¼ 01= 10): Cin ¼ 0 turns ON p6. Source/ drain side input of p6 is XOR = 1, which is passed towards the output Sum node as strong logic 1.
+
 Case 3 (Cin ¼ 1 and AB ¼ 00= 11): The XOR signal is 0 which turns ON p7. Source/ drain side input of p7 is Cin ¼ 1; which is passed towards the output Sum node as strong logic1.
+
 Case 4 (Cin ¼ 1 and AB ¼ 01= 10): Cin ¼ 1 turns ON n6.Source/ drain side input of n6 is XNOR = 0, which ispassed towards the output Sum node as strong logic 0.
 
 
@@ -30,12 +32,16 @@ generation circuit used in the proposed FA cell is described as
 follows:
 Case 1 (Cin ¼ 0=1 and AB ¼ 00): XNOR = 1 turns ON n8.
 The diffusion side input of n8 is B ¼ 0. This B ¼ 0 is passed towards the output Cout node as strong logic 0.
+
 Case 2 (Cin ¼ 0 and AB ¼ 01= 10): XOR = 1 turns ON n9.
 The diffusion side input of n9 is Cin ¼ 0; which is passed towards the output Cout node as strong logic 0.
+
 Case 3 (Cin ¼ 1 and AB ¼ 01= 10): XNOR = 0 turns ON p8.
 The diffusion side input of p8is Cin ¼ 1; which is passed towards the output Cout node as strong logic 1.
+
 Case 4 (Cin ¼ 0=1 and AB ¼ 11): XOR = 0 turns ON p9.
 The diffusion side input of p9 is A ¼ 1; 1 which is passed towards the output Cout node as strong logic 1.
+
 It is clear from Table 2 that the carry generation circuit of the proposed FA provides full swing output.
 # Circuits and Waveforms
 /Invertor and XOR-XNOR circuit generation:
