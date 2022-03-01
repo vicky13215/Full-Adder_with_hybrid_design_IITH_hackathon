@@ -1,74 +1,59 @@
 # Full-Adder_with_hybrid_design_IITH_hackathon
+
 # Abstract
- Here, I am going to design and implement 1-bit Full 
-Adder cell in full-swing hybrid logic style using 28nm technology.
-This proposed adder is supposed to achieve improvement in 
-Propagation delay, improvement in average power and also 
-improvement in power delay product in comparison to 
-conventional CMOS mirror Full-Adder while operating at 0.8 
-volts. As a whole, the performance is better than rest od the addercell.
+ Here, I am going to design and implement 1-bit Full Adder cell in full-swing hybrid logic style using 28nm technology.This proposed adder is supposed to achieve improvement in Propagation delay, improvement in average power and also improvement in power delay product in comparison to conventional CMOS mirror Full-Adder while operating at 0.8 volts. As a whole, the performance is better than rest od the adder cell.
+ 
 # Introduction
 Full-Adder Digital circuit design using full swing hybrid design style Using Synopsys Custom-compiler in 28nm technology
- Here, I am going to design and implement 1-bit Full 
-Adder cell in full-swing hybrid logic style using 28nm technology.
-This proposed adder is supposed to achieve improvement in 
-Propagation delay, improvement in average power and also 
-improvement in power delay product in comparison to 
-conventional CMOS mirror Full-Adder while operating at 1.8 
+ Here, I am going to design and implement 1-bit Full Adder cell in full-swing hybrid logic style using 28nm technology.This proposed adder is supposed to achieve improvement in Propagation delay, improvement in average power and also improvement in power delay product in comparison to conventional CMOS mirror Full-Adder while operating at 1.8 
 volts. As a whole, the performance is better than rest od the Full Adder cell.
+
 # Truth Table for Full-Adder
 ![tt](https://user-images.githubusercontent.com/38467140/156208854-d7bd19f1-1a86-4c0b-b109-c3166c5cdbed.JPG)
+
 # Proposed Circuit
 ![Circuit diagram](https://user-images.githubusercontent.com/38467140/156209679-288de7e9-4fb4-4c06-ac66-54df08f7d35d.JPG)
 
 # Proposed sum generation circuit
-Table 2 presents input‐output logic along with the full swing
-transistor paths for Sum signal generation. The operation of
-the Sum generation circuit can be explained as follows:
-Case 1 (Cin ¼ 0 and AB ¼ 00= 11): The XNOR signal is 1
-which turns ON n7. Source/ drain side input of n7 is
-Cin ¼ 0; which is passed towards the output Sum
-node as a strong logic 0.
-Case 2 (Cin ¼ 0 and AB ¼ 01= 10): Cin ¼ 0 turns ON p6.
-Source/ drain side input of p6 is XOR = 1, which is
-passed towards the output Sum node as strong logic 1.
-Case 3 (Cin ¼ 1 and AB ¼ 00= 11): The XOR signal is
-0 which turns ON p7. Source/ drain side input of p7 is
-Cin ¼ 1; which is passed towards the output Sum
-node as strong logic 1.
-Case 4 (Cin ¼ 1 and AB ¼ 01= 10): Cin ¼ 1 turns ON n6.
-Source/ drain side input of n6 is XNOR = 0, which is
-passed towards the output Sum node as strong logic 0.
+Table 2 presents input‐output logic along with the full swing transistor paths for Sum signal generation. The operation of the Sum generation circuit can be explained as follows:
+Case 1 (Cin ¼ 0 and AB ¼ 00= 11): The XNOR signal is 1 which turns ON n7. Source/ drain side input of n7 is
+Cin ¼ 0; which is passed towards the output Sum node as a strong logic 0.
+Case 2 (Cin ¼ 0 and AB ¼ 01= 10): Cin ¼ 0 turns ON p6. Source/ drain side input of p6 is XOR = 1, which is passed towards the output Sum node as strong logic 1.
+Case 3 (Cin ¼ 1 and AB ¼ 00= 11): The XOR signal is 0 which turns ON p7. Source/ drain side input of p7 is Cin ¼ 1; which is passed towards the output Sum node as strong logic1.
+Case 4 (Cin ¼ 1 and AB ¼ 01= 10): Cin ¼ 1 turns ON n6.Source/ drain side input of n6 is XNOR = 0, which ispassed towards the output Sum node as strong logic 0.
+
+
 # Carry generation circuit
 The carry generation circuit used in the proposed FA cell is
 similar to the carry circuit. The operation of the carry
 generation circuit used in the proposed FA cell is described as
 follows:
 Case 1 (Cin ¼ 0=1 and AB ¼ 00): XNOR = 1 turns ON n8.
-The diffusion side input of n8 is B ¼ 0. This B ¼ 0 is
-passed towards the output Cout node as strong logic 0.
+The diffusion side input of n8 is B ¼ 0. This B ¼ 0 is passed towards the output Cout node as strong logic 0.
 Case 2 (Cin ¼ 0 and AB ¼ 01= 10): XOR = 1 turns ON n9.
-The diffusion side input of n9 is Cin ¼ 0; which is
-passed towards the output Cout node as strong logic 0.
+The diffusion side input of n9 is Cin ¼ 0; which is passed towards the output Cout node as strong logic 0.
 Case 3 (Cin ¼ 1 and AB ¼ 01= 10): XNOR = 0 turns ON p8.
-The diffusion side input of p8is Cin ¼ 1; which is
-passed towards the output Cout node as strong logic 1.
+The diffusion side input of p8is Cin ¼ 1; which is passed towards the output Cout node as strong logic 1.
 Case 4 (Cin ¼ 0=1 and AB ¼ 11): XOR = 0 turns ON p9.
-The diffusion side input of p9 is A ¼ 1; 1 which is
-passed towards the output Cout node as strong logic 1.
-It is clear from Table 2 that the carry generation circuit of
-the proposed FA provides full swing output.
+The diffusion side input of p9 is A ¼ 1; 1 which is passed towards the output Cout node as strong logic 1.
+It is clear from Table 2 that the carry generation circuit of the proposed FA provides full swing output.
 # Circuits and Waveforms
 /Invertor and XOR-XNOR circuit generation:
 ![XOR_XNOR_ _Invertor_circuit](https://user-images.githubusercontent.com/38467140/156210171-bc420f64-525e-4591-8282-0a01273d7cd6.JPG)
+
 /Sum-generator circuit:
 ![sumJPG](https://user-images.githubusercontent.com/38467140/156210298-786758b2-176b-4379-ac2a-ac4dcc107b08.JPG)
+
 /Carry-generator Circuit:
 ![carry](https://user-images.githubusercontent.com/38467140/156210412-ebf1f4f3-480f-46f9-a1e2-00766be52982.JPG)
+
 /Test-bench Circuit:
 ![tb](https://user-images.githubusercontent.com/38467140/156211109-28adbb85-c943-48d7-ab84-feb35ebae03f.JPG)
+
 /Final Waveform:
 ![actual_waveform](https://user-images.githubusercontent.com/38467140/156211180-85cf5578-1068-4f2b-8cc6-33c89f76ac02.JPG)
+
+
 # Netlist
 *  Generated for: PrimeSim
 *  Design library name: FA_lib1
@@ -180,6 +165,9 @@ Aligarh, Uttar Pradesh, India ]
 -Chinmay panda, IIT Hyderabad
 # Author
 Bikram Keshari Panda
+
 Masters Grad at NIT , Jamshedpur
+
 Specialisation: Embedded System Design
+
 Email ID: vikramkeshari002@gmail.com
